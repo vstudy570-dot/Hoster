@@ -16,7 +16,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 
 # ==================== CONFIGURATION ====================
 # 🔥 Replace with your MAIN bot token (the manager bot)
-MANAGER_BOT_TOKEN = "YOUR_MANAGER_BOT_TOKEN_HERE"
+MANAGER_BOT_TOKEN = os.environ.get("MANAGER_BOT_TOKEN", "YOUR_MANAGER_BOT_TOKEN_HERE")
 ADMIN_ID = 7909219324          # Your Telegram user ID
 ADSGRAM_TOKEN = "bdbf4f8cba064b28963c4d4112f3c5ec"
 ADSGRAM_BLOCK_ID = 27379
